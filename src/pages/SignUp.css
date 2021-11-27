@@ -1,3 +1,12 @@
 .sign-up-section {
   margin-top: 80px;
 }
+.sign-up-victor {
+  position: relative;
+  left: -50px;
+}
+@media screen and (max-width: 1000px) {
+  .vactor-div {
+    display: none;
+  }
+}

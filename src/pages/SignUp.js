@@ -10,13 +10,13 @@ function SignUp() {
   return (
     <section className="sign-up-section">
       <Container>
-        <Row justify="space-between" gutter={16}>
-          <Col span={10}>
+        <Row justify="space-between" gutter={16} wrap>
+          <Col span={8} className="vactor-div">
             <div>
-              <img src={signUpVictor} alt="victor" />
+              <img src={signUpVictor} alt="victor" className="sign-up-victor" />
             </div>
           </Col>
-          <Col span={8} offset={6}>
+          <Col span={8} offset={8}>
             <SignUpForm />
           </Col>
         </Row>
