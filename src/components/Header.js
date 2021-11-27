@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="header-manu">
       <Container>
-        <a href="">
+        <a href="./">
           <img
             src={circlenomyLogo}
             alt="Circlenomy"
