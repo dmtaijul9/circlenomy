@@ -12,11 +12,23 @@ const SignIn = () => {
       <form action="" className="login-input-form">
         <Input placeholder="Email or mobile number" />
         <Input placeholder="Email or mobile number" />
-        <Button type="primary" block className="custom-btn">
+        <Button block className="custom-btn">
           Login
         </Button>
       </form>
       <Divider plain>or</Divider>
+      <div className="optional-login">
+        <Button block className="custom-btn">
+          Sign Up
+        </Button>
+        <Button block className="custom-btn">
+          <img src="" alt="" />
+          <span>Continue with Google</span>
+        </Button>
+        <a href="./" className="forgot-pass-btn">
+          <span>Forgot password?</span>
+        </a>
+      </div>
     </section>
   );
 };
