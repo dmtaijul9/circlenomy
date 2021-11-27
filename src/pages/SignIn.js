@@ -1,19 +1,23 @@
 import React, { useRef, useState } from "react";
 import circlenomyHeadline from "../img/CIRCLENOMY.png";
 import googleLogo from "../img/google.png";
-import { Input, Button, Divider } from "antd";
+import { Input, Button, Divider, Form } from "antd";
 import "./SignIn.css";
 
-const SignIn = () => {
+const SignIn = (props) => {
   const [emailInput, setEmailInput] = useState("");
   const [passwordInput, setPasswordInput] = useState("");
 
-  const inputEmail = useRef(null);
-  const inputPassword = useRef(null);
+  const setEmailHandler = (e) => {
+    setEmailInput(e.target.value);
+  };
+  const setPasswordHandler = (e) => {
+    setPasswordInput(e.target.value);
+  };
 
   const loginSubmitHandler = (e) => {
     e.preventDefault();
-    console.log("hello");
+    console.log({ emailInput, passwordInput });
   };
 
   return (
@@ -22,8 +26,19 @@ const SignIn = () => {
         <img src={circlenomyHeadline} alt="circlenomy" />
       </div>
       <form className="login-input-form" onSubmit={loginSubmitHandler}>
-        <Input placeholder="Email or mobile number" />
-        <Input.Password placeholder="Password" />
+        <Form.Item>
+          <Input
+            placeholder="Email or mobile number"
+            value={emailInput}
+            onChange={setEmailHandler}
+          />
+        </Form.Item>
+        <Form.Item>
+          <Input.Password
+            placeholder="Password"
+            onChange={setPasswordHandler}
+          />
+        </Form.Item>
         <Button block className="custom-btn" htmlType="submit">
           Login
         </Button>
