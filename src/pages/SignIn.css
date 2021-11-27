@@ -1,0 +1,23 @@
+.login-ui-box {
+  max-width: 460px;
+  border: 1px solid #042175;
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 100px auto 0;
+}
+.login-headline {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.login-input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.login-input-form > input {
+}
+.custom-btn {
+  background-color: #042175;
+  border: 1px solid #9da3a6;
+  font-weight: bold;
+}
