@@ -3,9 +3,10 @@
 }
 .sign-up-victor {
   position: relative;
+  max-width: 600px;
   left: -50px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   .vactor-div {
     display: none;
   }
